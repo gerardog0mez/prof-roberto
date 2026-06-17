@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prof. Roberto Elizalde – Clases Particulares</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <a href="https://www.linkedin.com/in/robdounce-acoustics/" class="nav-brand">
+    <div class="nav-logo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+      </svg>
+    </div>
+    <div class="nav-brand-text">
+      <strong>Prof. Roberto Elizalde</strong>
+      <span>Clases Particulares</span>
+    </div>
+  </a>
+  <a href="https://wa.me/524425590171" class="nav-cta" target="_blank">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L.057 23.882l6.198-1.448A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.88 9.88 0 0 1-5.034-1.378l-.36-.214-3.732.872.936-3.618-.235-.372A9.908 9.908 0 0 1 2.106 12C2.106 6.529 6.529 2.106 12 2.106S21.894 6.529 21.894 12 17.471 21.894 12 21.894z"/></svg>
+    WhatsApp
+  </a>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <div class="hero-eyebrow">¡BIENVENIDO!</div>
+    <h1>
+  Clases particulares de<br>
+  <span id="hero-subjects"><span class="subject-1">Inglés</span>,&nbsp;<span class="subject-2">Matemáticas</span><br>y&nbsp;<span class="subject-3">Álgebra</span></span>
+</h1>
+    <p class="hero-sub">
+      Clases particulares para primaria, secundaria, preparatoria y universidad. Recibe atención personalizada, apoyo con tareas, preparación para exámenes y asesoría en los temas que más se te dificulten.
+    </p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="openBookingModal()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Reservar clase
+      </button>
+      <a href="https://wa.me/524425590171" class="btn-secondary" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L.057 23.882l6.198-1.448A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.88 9.88 0 0 1-5.034-1.378l-.36-.214-3.732.872.936-3.618-.235-.372A9.908 9.908 0 0 1 2.106 12C2.106 6.529 6.529 2.106 12 2.106S21.894 6.529 21.894 12 17.471 21.894 12 21.894z"/></svg>
+        Enviar mensaje
+      </a>
+    </div>
+    <div class="hero-badge">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <div>
+        <strong>¡Primera clase prueba de 30 minutos totalmente GRATIS!</strong>
+        <span style="display:block">Recibe orientación personalizada y resuelve tus dudas.</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div style="position:relative;width:100%;display:flex;justify-content:center;">
+      <div class="modalities-card">
+        <h3>Modalidades</h3>
+        <div class="modality-item">
+          <div class="modality-icon online"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <div><strong>En línea</strong><span>Clases virtuales para estudiantes de cualquier parte de México. Impartidas a través de <b>Google Meet u otras plataformas.</b>, </span></div>
+        </div>
+        <div class="modality-item">
+          <div class="modality-icon home"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <div><strong>A domicilio</strong><span>Clases presenciales disponibles únicamente en <b>Querétaro</b>. El profesor se traslada a tu domicilio para impartir la clase.</span></div>
+        </div>
+      </div>
+      <div class="stat-bubble bot-right"> <span>Resultados</span> garantizados</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SOBRE MÍ ─── -->
+<section id="sobre-mi">
+  <div class="section-label">Sobre mí</div>
+  <div class="divider-accent"></div>
+  <div class="about-grid">
+    <div class="avatar-wrap">
+      <div class="avatar" id="avatar-display">
+        <svg id="avatar-svg-main" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <img id="avatar-img" src="" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none;border-radius:50%;" />
+      </div>
+      <input id="avatar-input" type="file" accept="image/*" style="display:none" onchange="adminPreviewAvatar(event)" />
+      <p class="avatar-hint" id="avatar-hint" style="display:none">📷 Clic para cambiar foto</p>
+    </div>
+    <div class="about-text">
+      <h2 class="section-title">Prof. Roberto Elizalde</h2>
+      <p id="about-p1">Soy profesor particular con pasión por la enseñanza. Mi objetivo es ayudarte a comprender los temas de forma clara, práctica y efectiva.</p>
+      <p id="about-p2">Diseño cada clase según tus necesidades, utilizando ejemplos prácticos y ejercicios que te ayudarán a ganar confianza y mejorar tu desempeño académico.</p>
+    </div>
+    <div class="perks-list">
+      <div class="perk-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Atención personalizada</div>
+      <div class="perk-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Métodos efectivos</div>
+      <div class="perk-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Enfoque práctico</div>
+      <div class="perk-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Resultados garantizados</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MATERIAS ─── -->
+<section id="materias" style="background:var(--light)">
+  <div class="text-center">
+    <div class="section-label" style="display:inline-block">Materias</div>
+    <div class="divider-accent mx-auto"></div>
+    <h2 class="section-title">Materias que imparto</h2>
+  </div>
+  <!-- Las cards se generan dinámicamente con JS -->
+  <div class="subjects-grid" id="subjects-grid-public"></div>
+</section>
+
+<!-- ─── NIVELES + MODALIDADES ─── -->
+<section>
+  <div class="two-col">
+    <div>
+      <div class="section-label">Niveles</div>
+      <div class="divider-accent"></div>
+      <h2 class="section-title">Niveles educativos</h2>
+      <p style="color:var(--muted);font-size:15px;margin-bottom:8px;">Clases para todos los niveles educativos</p>
+      <div class="levels-grid">
+        <div class="level-chip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Primaria</div>
+        <div class="level-chip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>Secundaria</div>
+        <div class="level-chip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Preparatoria</div>
+        <div class="level-chip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><path d="M4.93 4.93l2.83 2.83M19.07 4.93l-2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M19.07 19.07l-2.83-2.83M12 18v4"/></svg>Universidad</div>
+      </div>
+    </div>
+    <div>
+      <div class="section-label">Modalidades</div>
+      <div class="divider-accent"></div>
+      <h2 class="section-title">Elige tu modalidad</h2>
+      <p style="color:var(--muted);font-size:15px;margin-bottom:8px;">La opción que mejor se adapte a ti</p>
+      <div class="mode-cards">
+        <div class="mode-card">
+          <div class="mode-icon online"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <div><strong style="color:var(--navy)">En línea</strong><p>Clases virtuales personalizadas mediante Zoom, Google Meet y otras plataformas.</p></div>
+        </div>
+        <div class="mode-card">
+          <div class="mode-icon home"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <div><strong style="color:var(--green)">A domicilio</strong><p>Recibe clases presenciales en la comodidad de tu hogar dentro de la zona de <b>Querétaro</b>.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRECIOS ─── -->
+<section id="precios" style="background:var(--light)">
+  <div class="text-center">
+    <div class="section-label" style="display:inline-block">Precios</div>
+    <div class="divider-accent mx-auto"></div>
+    <h2 class="section-title">Inversión en tu aprendizaje</h2>
+  </div>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="price-icon navy"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+      <h3 class="navy">Clases en línea</h3>
+      <div class="price-amount"><sup>$</sup><span id="price-online">0</span></div>
+      <div class="price-unit">por hora</div>
+    </div>
+    <div class="price-card featured">
+      <div class="price-icon green"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <h3 class="green">Clases a domicilio</h3>
+      <div class="price-amount"><sup>$</sup><span id="price-home">0</span></div>
+      <div class="price-unit">por hora</div>
+      <p class="price-unit"><b>Querétaro</b></p>
+    </div>
+  </div>
+  <p class="price-note">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    Las clases a domicilio están sujetas a disponibilidad y a un cargo adicional por traslado, dependiendo de la zona de <b>Querétaro</b> donde se impartan.
+  </p>
+</section>
+
+<!-- ─── CTA FINAL ─── -->
+<section class="cta-section" id="contacto">
+  <div>
+    <h2>¿Listo para mejorar tus resultados?</h2>
+    <p>Estoy aquí para ayudarte a alcanzar tus metas académicas.</p>
+  </div>
+  <div class="cta-actions">
+    <a href="https://wa.me/524425590171" class="btn-white" target="_blank">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L.057 23.882l6.198-1.448A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.88 9.88 0 0 1-5.034-1.378l-.36-.214-3.732.872.936-3.618-.235-.372A9.908 9.908 0 0 1 2.106 12C2.106 6.529 6.529 2.106 12 2.106S21.894 6.529 21.894 12 17.471 21.894 12 21.894z"/></svg>
+      Enviar mensaje
+    </a>
+    <button class="btn-outline-white" onclick="openBookingModal()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Reservar clase
+    </button>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <strong>Prof. Roberto Elizalde</strong>
+      <p>Clases particulares para todos los niveles educativos.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/robdounce-acoustics/" target="_blank" class="social-btn" title="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.67-1.27 2.3-2.6 4.74-2.6C22.2 7.6 24 10.1 24 14.1V24h-5v-8.5c0-2.03-.04-4.65-2.83-4.65-2.84 0-3.28 2.22-3.28 4.5V24h-5V8z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>+52 442 559 0171</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>r.elizalde.d@gmail.com</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Querétaro, Qro</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Sígueme</h4>
+      <ul>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.67-1.27 2.3-2.6 4.74-2.6C22.2 7.6 24 10.1 24 14.1V24h-5v-8.5c0-2.03-.04-4.65-2.83-4.65-2.84 0-3.28 2.22-3.28 4.5V24h-5V8z"/></svg>LinkedIn</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 Prof. Roberto Elizalde – Clases Particulares. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<!-- ══ MODAL: RESERVAR CLASE ══ -->
+<div class="modal-overlay" id="booking-modal" onclick="closeOnOverlay(event,'booking-modal')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2>Reservar clase</h2>
+      <button class="modal-close" onclick="closeModal('booking-modal')">✕</button>
+    </div>
+    <div class="modal-step" id="step-day">
+      <p class="modal-sub">Selecciona una fecha disponible</p>
+      <!-- Calendario -->
+      <div class="cal-wrap">
+        <div class="cal-header">
+          <button class="cal-nav" onclick="calPrevMonth()">&#8249;</button>
+          <span id="cal-title"></span>
+          <button class="cal-nav" onclick="calNextMonth()">&#8250;</button>
+        </div>
+        <div class="cal-weekdays">
+          <span>Dom</span><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span>
+        </div>
+        <div class="cal-grid" id="cal-grid"></div>
+      </div>
+      <p class="no-slots-msg" id="no-days-msg" style="display:none">El profesor aún no ha configurado horarios. Escríbele por WhatsApp.</p>
+    </div>
+    <div class="modal-step" id="step-hour" style="display:none">
+      <button class="back-btn" onclick="goBack()">← Cambiar fecha</button>
+      <p class="modal-sub">Horarios disponibles para <strong id="selected-day-label"></strong></p>
+      <div class="hours-grid" id="hours-grid"></div>
+    </div>
+    <div class="modal-step" id="step-form" style="display:none">
+      <button class="back-btn" onclick="goBackToDay()">← Cambiar horario</button>
+      <p class="modal-sub">Confirma tu reservación</p>
+      <div class="summary-box">📅 <strong id="summary-text"></strong></div>
+      <div class="form-group">
+        <label>Tu nombre</label>
+        <input type="text" id="student-name" placeholder="Ej. Ana García" autocomplete="off" />
+        <span class="input-hint">Solo letras y espacios</span>
+      </div>
+      <div class="form-group">
+        <label>Tu WhatsApp</label>
+        <input type="tel" id="student-phone" placeholder="Ej. 442-1234-567" autocomplete="off" maxlength="12" />
+        <span class="input-hint">Solo números</span>
+      </div>
+      <div class="form-group">
+        <label>Materia de interés</label>
+        <select id="student-subject">
+          <option value="">Selecciona...</option>
+        </select>
+      </div>
+      <button class="btn-primary" style="width:100%;justify-content:center;margin-top:8px" onclick="sendBookingWA()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L.057 23.882l6.198-1.448A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.88 9.88 0 0 1-5.034-1.378l-.36-.214-3.732.872.936-3.618-.235-.372A9.908 9.908 0 0 1 2.106 12C2.106 6.529 6.529 2.106 12 2.106S21.894 6.529 21.894 12 17.471 21.894 12 21.894z"/></svg>
+        Confirmar por WhatsApp
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MODAL: LOGIN ADMIN ══ -->
+<div class="modal-overlay" id="admin-login-modal" onclick="closeOnOverlay(event,'admin-login-modal')">
+  <div class="modal-box" style="max-width:380px">
+    <div class="modal-header">
+      <h2>Acceso profesor</h2>
+      <button class="modal-close" onclick="closeModal('admin-login-modal')">✕</button>
+    </div>
+    <div class="modal-step">
+      <p class="modal-sub">Ingresa la contraseña para editar el contenido</p>
+      <div class="form-group">
+        <label>Contraseña</label>
+        <input type="password" id="admin-password" placeholder="••••••••" onkeydown="if(event.key==='Enter')checkAdminLogin()" />
+      </div>
+      <p class="error-msg" id="login-error" style="display:none">Contraseña incorrecta.</p>
+      <button class="btn-primary" style="width:100%;justify-content:center;margin-top:4px" onclick="checkAdminLogin()">Entrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MODAL: PANEL ADMIN ══ -->
+<div class="modal-overlay" id="admin-panel-modal" onclick="closeOnOverlay(event,'admin-panel-modal')">
+  <div class="modal-box admin-panel">
+    <div class="modal-header">
+      <h2>⚙ Panel del profesor</h2>
+      <button class="modal-close" onclick="closeModal('admin-panel-modal')">✕</button>
+    </div>
+
+    <div class="admin-tabs">
+      <button class="admin-tab active" onclick="switchTab('tab-schedule')">Horarios</button>
+      <button class="admin-tab"        onclick="switchTab('tab-prices')">Precios</button>
+      <button class="admin-tab"        onclick="switchTab('tab-subjects')">Materias</button>
+      <button class="admin-tab"        onclick="switchTab('tab-desc')">Descripción</button>
+      <button class="admin-tab"        onclick="switchTab('tab-photo')">Foto</button>
+      <button class="admin-tab"        onclick="switchTab('tab-bookings')">Citas</button>
+    </div>
+
+    <!-- TAB: HORARIOS -->
+    <div class="admin-tab-content" id="tab-schedule">
+      <p class="modal-sub">Define los días y los horarios disponibles — haz clic en cada hora para activarla</p>
+      <div class="schedule-editor" id="schedule-editor"></div>
+      <button class="btn-add-day" onclick="addScheduleDay()">+ Agregar día</button>
+      <button class="btn-primary" style="margin-top:16px;width:100%;justify-content:center" onclick="saveSchedule()">Guardar horarios</button>
+    </div>
+
+    <!-- TAB: PRECIOS -->
+    <div class="admin-tab-content" id="tab-prices" style="display:none">
+      <p class="modal-sub">Actualiza los precios por hora</p>
+      <div class="form-group">
+        <label>Precio clases en línea ($/hora)</label>
+        <input type="number" id="admin-price-online" placeholder="Ej. 200" />
+      </div>
+      <div class="form-group">
+        <label>Precio clases a domicilio ($/hora)</label>
+        <input type="number" id="admin-price-home" placeholder="Ej. 250" />
+      </div>
+      <button class="btn-primary" style="width:100%;justify-content:center;margin-top:8px" onclick="savePrices()">Guardar precios</button>
+    </div>
+
+    <!-- TAB: MATERIAS -->
+    <div class="admin-tab-content" id="tab-subjects" style="display:none">
+      <p class="modal-sub">Cambia el nombre, color y temas de cada materia</p>
+      <div id="admin-subjects-container"></div>
+      <button class="btn-primary" style="width:100%;justify-content:center;margin-top:8px" onclick="saveSubjects()">Guardar materias</button>
+    </div>
+
+    <!-- TAB: DESCRIPCIÓN -->
+    <div class="admin-tab-content" id="tab-desc" style="display:none">
+      <p class="modal-sub">Edita los párrafos de tu sección "Sobre mí"</p>
+      <div class="form-group">
+        <label>Párrafo 1</label>
+        <textarea id="admin-desc-p1" rows="4" placeholder="Tu presentación principal..."></textarea>
+      </div>
+      <div class="form-group">
+        <label>Párrafo 2</label>
+        <textarea id="admin-desc-p2" rows="4" placeholder="Más detalles sobre tu método..."></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%;justify-content:center;margin-top:8px" onclick="saveDescription()">Guardar descripción</button>
+    </div>
+
+    <!-- TAB: FOTO -->
+    <div class="admin-tab-content" id="tab-photo" style="display:none">
+      <p class="modal-sub">Sube tu foto de perfil</p>
+      <div style="text-align:center;margin:20px 0">
+        <div class="avatar" id="admin-avatar-preview" style="margin:0 auto;cursor:pointer" onclick="document.getElementById('admin-avatar-input').click()">
+          <svg id="admin-avatar-svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <img id="admin-avatar-preview-img" src="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none;border-radius:50%;" />
+        </div>
+        <input id="admin-avatar-input" type="file" accept="image/*" style="display:none" onchange="adminPreviewAvatar(event)" />
+        <p style="margin-top:12px;color:var(--muted);font-size:13px">Clic en el círculo para seleccionar imagen</p>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn-primary" style="flex:1;justify-content:center" onclick="saveAdminPhoto()">Guardar foto</button>
+        <button id="btn-delete-photo" class="btn-danger" style="display:none;flex:1;justify-content:center" onclick="deleteAdminPhoto()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+          Borrar foto
+        </button>
+      </div>
+    </div>
+
+    <!-- TAB: CITAS -->
+    <div class="admin-tab-content" id="tab-bookings" style="display:none">
+      <p class="modal-sub">Citas agendadas esta semana — se reinician automáticamente cada lunes</p>
+      <div id="bookings-container"></div>
+      <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+        <button class="btn-primary" style="flex:1;justify-content:center" onclick="exportToExcel()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Exportar a Excel
+        </button>
+        <button class="btn-danger" style="flex:1;justify-content:center" onclick="resetBookingsManual()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.5"/></svg>
+          Reiniciar semana
+        </button>
+      </div>
+    </div>
+
+    <p class="save-confirm" id="admin-save-msg" style="display:none">✅ Guardado correctamente</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
